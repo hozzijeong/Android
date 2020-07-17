@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/indexTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:text="1 / 10"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/scoreTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:text="10 점"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/questionTv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:background="#dfdfdf"
+        android:gravity="center"
+        android:text="한국의 수도는?"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/chTv1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/questionTv"
+        android:layout_alignLeft="@+id/questionTv"
+        android:layout_alignRight="@+id/questionTv"
+        android:layout_marginTop="50dp"
+        android:background="#55895298"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="1. 서울"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/chTv2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/chTv1"
+        android:layout_alignLeft="@+id/questionTv"
+        android:layout_alignRight="@+id/questionTv"
+        android:layout_marginTop="8dp"
+        android:background="#55895298"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="2. 시카고"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/chTv3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/chTv2"
+        android:layout_alignLeft="@+id/questionTv"
+        android:layout_alignRight="@+id/questionTv"
+        android:layout_marginTop="8dp"
+        android:background="#55895298"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="3. 워싱턴"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/chTv4"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/chTv3"
+        android:layout_alignLeft="@+id/questionTv"
+        android:layout_alignRight="@+id/questionTv"
+        android:layout_marginTop="8dp"
+        android:background="#55895298"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="4. 부산"
+        android:textSize="23sp" />
+
+</RelativeLayout>

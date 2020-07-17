@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/addeng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="영단어 입력:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/addkor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addeng"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="한글입력:"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/inputeng"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/addeng"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/addeng"
+        android:autofillHints="Type Eng"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/inputkor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignStart="@id/inputeng"
+        android:layout_alignBottom="@id/addkor"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/addkor"
+        android:autofillHints="Typr Kor"
+        android:inputType="text" />
+   <ScrollView
+       android:layout_width="350dp"
+       android:layout_height="150dp"
+       android:layout_marginTop="280dp"
+       android:layout_centerHorizontal="true">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+               <TextView
+                   android:id="@+id/word"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=" "
+                   android:gravity="center"
+                   android:textSize="30sp"
+                   android:layout_gravity="center"
+                    />
+       </LinearLayout>
+   </ScrollView>
+
+
+    <Button
+        android:id="@+id/addquite"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/addkor"
+        android:text="뒤로가기"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/addok"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/inputkor"
+        android:layout_margin="20dp"
+        android:text="입력"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/addsave"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/inputkor"
+        android:layout_margin="20dp"
+        android:text="저장"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

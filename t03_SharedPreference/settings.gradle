@@ -1,0 +1,2 @@
+rootProject.name='t03_SharedPreference'
+include ':app'

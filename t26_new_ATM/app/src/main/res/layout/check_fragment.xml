@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Button
+        android:id="@+id/acc_quite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/user_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/acc_quite"
+        android:textSize="35sp"
+        android:text="잔액: "
+        android:layout_marginRight="15dp"
+        />
+    <ListView
+        android:id="@+id/user_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acc_quite"
+        android:layout_marginTop="20dp"
+    />
+
+
+</RelativeLayout>

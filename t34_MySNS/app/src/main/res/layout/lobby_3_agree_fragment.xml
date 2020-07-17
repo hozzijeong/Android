@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    >
+<!--    back ground의 사이즈와 view 의 사이즈는 별로 차이 가 없어보인다. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/rect_shape"
+            android:layout_gravity="center"
+            android:text="개인동의 1"
+            android:padding="5dp"
+            />
+        <CheckBox
+            android:id="@+id/agree_check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="동의"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/rect_shape"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="개인동의 2"
+            android:padding="5dp"
+
+            />
+        <CheckBox
+            android:id="@+id/agree_check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="동의"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            />
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <Button
+            android:id="@+id/agree_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="뒤로 가기"/>
+        <Button
+            android:id="@+id/agree_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:text="확인"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

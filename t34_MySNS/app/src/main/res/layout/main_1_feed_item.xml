@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+   >
+   <RelativeLayout
+       android:id="@+id/feed_upside_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/feed_author_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+          <TextView
+              android:id="@+id/feed_author_name"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:text="회원 아이디"
+              android:layout_toRightOf="@id/feed_author_image"
+              android:layout_marginLeft="10dp"
+              android:gravity="center_vertical"
+              />
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/feed_content_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/feed_upside_layout">
+       <TextView
+           android:id="@+id/feed_content"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="오늘의 일기"
+           android:padding="10dp"/>
+
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/feed_downside_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/feed_content_layout"
+       android:layout_marginTop="10dp"
+       android:layout_margin="10dp">
+
+       <ImageButton
+           android:id="@+id/feed_like"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/circle_off_shape"
+           />
+
+       <Button
+           android:id="@+id/feed_go_comment"
+           android:layout_width="80dp"
+           android:layout_height="40dp"
+           android:background="#00000000"
+           android:text="댓글 이동"
+           android:layout_alignBottom="@id/feed_hash_layout"
+           android:layout_alignParentEnd="true"
+           />
+
+       <LinearLayout
+           android:id="@+id/feed_hash_layout"
+           android:layout_below="@id/feed_like"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+
+           android:layout_toLeftOf="@id/feed_go_comment"
+           android:orientation="horizontal"
+           >
+<!--           <TextView-->
+<!--               android:id="@+id/feed_hash_tag"-->
+<!--               android:layout_width="match_parent"-->
+<!--               android:layout_height="40dp"-->
+<!--               android:layout_below="@id/feed_like"-->
+<!--               android:gravity="center_vertical"-->
+<!--               android:textSize="13sp"-->
+<!--                android:bufferType="spannable"-->
+<!--               android:text="해시태그"-->
+<!--               />-->
+       </LinearLayout>
+
+
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/feed_my_image"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_marginTop="10dp"
+           android:src="@drawable/ic_launcher_background"
+           android:layout_below="@id/feed_hash_layout"
+           />
+
+       <EditText
+           android:id="@+id/feed_comment"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_alignBottom="@id/feed_my_image"
+           android:layout_toRightOf="@id/feed_my_image"
+           android:layout_toLeftOf="@id/feed_comment_btn"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:hint="댓글을 입력하세요"
+
+           />
+       <Button
+           android:id="@+id/feed_comment_btn"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_alignParentEnd="true"
+           android:layout_alignBottom="@id/feed_my_image"
+           android:text="입력"
+           android:textSize="7dp"
+           />
+
+   </RelativeLayout>
+
+
+</RelativeLayout>

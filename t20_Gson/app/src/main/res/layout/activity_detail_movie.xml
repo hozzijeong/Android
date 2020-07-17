@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_movieActivity">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher_foreground"
+        android:background="@drawable/ic_launcher_background"
+        android:layout_marginTop="20dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="25sp"
+                android:text="영화 제목"
+                />
+            <TextView
+                android:id="@+id/detail_openYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/detail_title"
+                android:layout_alignBottom="@id/detail_title"
+                android:textSize="15sp"
+                android:text="(2015)"
+                />
+            <TextView
+                android:id="@+id/detail_title_eng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_title"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:text="(영어 제목)"
+                />
+            <TextView
+                android:id="@+id/detail_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_title_eng"
+                android:layout_margin="5dp"
+                android:textSize="15dp"
+                android:text="관람 등급: "/>
+            <TextView
+                android:id="@+id/detail_running_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_grade"
+                android:layout_margin="5dp"
+                android:textSize="15dp"
+                android:text="상영시간: "/>
+            <TextView
+                android:id="@+id/detail_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_running_time"
+                android:layout_margin="5dp"
+                android:textSize="15dp"
+                android:text="장르: "/>
+            <TextView
+                android:id="@+id/detail_director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_genre"
+                android:layout_margin="5dp"
+                android:textSize="15dp"
+                android:text="장르: "/>
+
+            <ListView
+                android:id="@+id/detail_actors"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/detail_director"
+                />
+            <TextView
+                android:id="@+id/detail_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_actors"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:text="제작사: "
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,2 @@
+rootProject.name='t34_MySNS'
+include ':app'

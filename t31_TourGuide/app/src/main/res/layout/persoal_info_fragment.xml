@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/info1"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가나다라마바사아자차카타파"
+            />
+    </ScrollView>
+    <CheckBox
+        android:id="@+id/first_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="동의"
+        android:layout_below="@id/info1"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        />
+
+    <ScrollView
+        android:id="@+id/info2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/first_box"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가나다라마바사아자차카타파"
+            />
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/second_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="동의"
+        android:layout_below="@id/info2"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        />
+
+
+</RelativeLayout>

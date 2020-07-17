@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:weightSum="3">
+   <Button
+       android:id="@+id/feed_modify"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:text="수정"
+       android:textSize="20sp"
+       android:textColor="#14AAED"
+       android:background="#ffffff"/>
+    <Button
+       android:id="@+id/feed_remove"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+        android:text="삭제"
+        android:textSize="20sp"
+        android:textColor="#14AAED"
+        android:background="#ffffff"/>
+    <Button
+       android:id="@+id/feed_quite"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+        android:text="나가기"
+        android:textSize="20sp"
+        android:textColor="#14AAED"
+        android:background="#ffffff"/>
+
+</LinearLayout>

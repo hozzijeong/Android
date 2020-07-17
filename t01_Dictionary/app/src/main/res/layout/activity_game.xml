@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/game_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="단어 게임"
+        android:textSize="40sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Question"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="info"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/board"
+        android:layout_marginRight="20dp"
+        android:text="score"
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question"
+        android:layout_margin="40dp"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/gameback"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="Back"
+        android:layout_below="@+id/answer"
+        android:textSize="15sp"
+        android:layout_marginStart="65dp"
+        />
+
+    <Button
+        android:id="@+id/gameinsert"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/answer"
+        android:text="Enter"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/retry"
+        />
+    <Button
+        android:id="@+id/retry"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/answer"
+        android:text="Retry"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/change"
+        />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/answer"
+        android:layout_toRightOf="@id/gameback"
+        android:text="Change"
+        android:textSize="11sp" />
+</RelativeLayout>

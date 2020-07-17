@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/list_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="순번: "
+        android:textSize="15sp"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/list_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eng "
+        android:textSize="15sp"
+        android:layout_margin="20dp"
+        android:layout_toRightOf="@id/list_turn"
+        />
+    <TextView
+        android:id="@+id/list_kor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kor "
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="120dp"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>

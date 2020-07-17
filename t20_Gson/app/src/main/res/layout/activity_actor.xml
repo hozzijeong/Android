@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActorActivity">
+    <TextView
+        android:id="@+id/actor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="이름"
+        android:layout_toRightOf="@id/actor_image"
+        android:layout_alignTop="@id/actor_image"
+        />
+    <TextView
+        android:id="@+id/actor_name_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="영어이름"
+        android:layout_toRightOf="@id/actor_image"
+        android:layout_below="@id/actor_name"
+        android:layout_marginTop="10dp"
+        />
+        <TextView
+        android:id="@+id/actor_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="성별"
+        android:layout_toRightOf="@id/actor_image"
+        android:layout_below="@id/actor_name_eng"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/actor_filmo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="필모"
+        android:layout_below="@id/actor_image"
+        android:layout_marginLeft="25dp"
+        />
+
+    <ImageView
+        android:id="@+id/actor_image"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_margin="25dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:background="@drawable/ic_launcher_background"/>
+
+    <ListView
+        android:id="@+id/actor_filmo_Lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/actor_filmo"/>
+
+
+</RelativeLayout>

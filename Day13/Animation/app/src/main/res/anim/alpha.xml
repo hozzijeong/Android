@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--   alpha 는 0~1까지 있음
+
+    android:startOffset = "1000" -> 1초 있다가 시작하도록 설정하는 명령어
+    따로 설정을 해주지 않으면 동시에 실행이 된다.(원하는 애니메이션에 설정할 것)
+
+    android:fillAfter = true -> set에 설정할 것.
+    => 애니메이션이 끝나도 상태가 유지되게 하는 옵션
+    
+-->
+
+    <alpha
+        android:fromAlpha="0.5"
+        android:toAlpha="1"
+        android:duration = "3000"
+        />
+
+
+</set>

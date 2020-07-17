@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/transfer_money_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="30dp"
+        android:hint="송금금액을 입력하세요"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transfer_money_et"
+        android:layout_alignLeft="@id/transfer_money_et"
+        android:layout_alignRight="@id/transfer_money_et"
+        >
+
+        <Button
+            android:id="@+id/transfer_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+100만"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/transfer_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+10만"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/transfer_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+5만"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/transfer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1만"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/transfer_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전액"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/transfer_acc_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/transfer_money_et"
+        android:layout_marginTop="100dp"
+        android:layout_toLeftOf="@id/transfer_acc_ck"
+        android:hint="계좌번호를 입력하세요"
+
+    />
+    <Button
+        android:id="@+id/transfer_acc_ck"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:text="조회"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/transfer_acc_et"
+        android:layout_marginRight="30dp"/>
+
+    <EditText
+        android:id="@+id/transfer_pw_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호를 입력하세요"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/transfer_acc_et"
+        android:layout_toLeftOf="@id/transfer_pw_ck"
+        />
+    <Button
+        android:id="@+id/transfer_pw_ck"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:text="확인"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/transfer_pw_et"
+        android:layout_marginRight="30dp"/>
+    <Button
+        android:id="@+id/transfer_quite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/transfer_pw_et"
+        android:layout_below="@id/transfer_pw_et"
+        android:layout_marginTop="40dp"
+        android:text="뒤로 가기"
+        />
+    <Button
+        android:id="@+id/transfer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/transfer_pw_ck"
+        android:layout_below="@id/transfer_pw_et"
+        android:layout_marginTop="40dp"
+        android:text="이체하기"
+        />
+
+</RelativeLayout>

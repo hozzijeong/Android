@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 첫 번째 버튼을 왼쪽으로 정렬 -->
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="left"/>
+
+    <!-- 두 번째 버튼을 가운데로 정렬 -->
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="center"/>
+
+    <!-- 세 번째 버튼을 오른쪽으로 정렬 -->
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="right"/>
+
+    <!-- 텍스트뷰 안의 글자를 왼쪽으로 정렬 -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#ffff0000"
+        android:textSize="32dp"
+        android:text="left"/>
+
+    <!-- 텍스트뷰 안의 글자를 오른쪽으로 정렬 -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="#ffff0000"
+        android:textSize="32dp"
+        android:text="right"/>
+
+    <!-- 텍스트뷰 안의 글자를 가로와 세로의 가운데로 정렬 -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffff0000"
+        android:textSize="32dp"
+        android:text="center" />
+
+
+</LinearLayout>

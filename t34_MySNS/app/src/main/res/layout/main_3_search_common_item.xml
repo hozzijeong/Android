@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:id="@+id/search_profile"
+       android:layout_width="60dp"
+       android:layout_height="60dp"
+       android:layout_margin="20dp"
+       />
+   <TextView
+       android:id="@+id/search_nickname"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@id/search_profile"
+       android:text="내 닉네임"
+       android:textStyle="bold"
+       android:textSize="18sp"
+       android:layout_alignTop="@id/search_profile"
+       />
+   <TextView
+       android:id="@+id/search_name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="내 이름"
+       android:gravity="center_vertical"
+       android:layout_below="@id/search_nickname"
+       android:layout_alignStart="@id/search_nickname"
+       android:layout_alignBottom="@id/search_profile"
+       android:textSize="18sp"
+       />
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 가입"
+        android:textSize="30sp"
+        android:layout_margin="30dp"
+        />
+    <TextView
+        android:id="@+id/join_id_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:text="ID 입력:"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/join_id_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/join_id_tv"
+        android:layout_alignBottom="@id/join_id_tv"
+        android:layout_toLeftOf="@id/join_check_id"
+        android:layout_marginRight="20dp"
+        />
+    <Button
+        android:id="@+id/join_check_id"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/join_id_et"
+        android:layout_marginRight="30dp"
+        android:text="아이디\n중복확인"
+        android:textSize="8sp"
+        />
+    <TextView
+        android:id="@+id/join_pw1_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="PW 입력:"
+        android:textSize="20sp"
+        android:layout_below="@id/join_id_tv"
+        />
+    <EditText
+        android:id="@+id/join_pw1_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/join_pw1_tv"
+        android:layout_alignBottom="@id/join_pw1_tv"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:id="@+id/join_pw2_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="PW 재입력:"
+        android:textSize="20sp"
+        android:layout_below="@id/join_pw1_tv"
+        />
+    <EditText
+        android:id="@+id/join_pw2_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/join_pw2_tv"
+        android:layout_alignBottom="@id/join_pw2_tv"
+        android:layout_marginRight="30dp"
+        />
+    <TextView
+        android:id="@+id/join_name_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="이름 입력:"
+        android:textSize="20sp"
+        android:layout_below="@id/join_pw2_tv"
+        />
+    <EditText
+        android:id="@+id/join_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/join_name_tv"
+        android:layout_alignBottom="@id/join_name_tv"
+        android:layout_marginRight="30dp"
+        />
+    <Button
+        android:id="@+id/join_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/join_name_tv"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        />
+    <Button
+        android:id="@+id/join_quite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나가기"
+        android:layout_below="@id/join_name_tv"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        />
+
+</RelativeLayout>

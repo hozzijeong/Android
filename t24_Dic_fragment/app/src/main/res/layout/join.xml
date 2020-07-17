@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/join_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 가입"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textSize="30sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/join_id_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/join_tv"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <TextView
+            android:id="@+id/join_id_tv"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="아이디: "
+            android:gravity="center_vertical"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/join_id_et"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/join_id_tv"/>
+        <Button
+            android:id="@+id/join_id_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/join_id_et"
+            android:text="아이디\n중복확인"
+            android:textSize="10sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/join_pw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/join_id_layout"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <TextView
+            android:id="@+id/join_pw_tv"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="비밀번호: "
+            android:gravity="center_vertical"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/join_pw_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/join_pw_tv"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/join_pw_check_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/join_pw_layout"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <TextView
+            android:id="@+id/join_pw_check_tv"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="비밀번호 재입력: "
+            android:gravity="center_vertical"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/join_pw_check_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/join_pw_check_tv"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/join_gender_tv"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/join_gender_layout"
+        android:text="성별: "
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:id="@+id/join_gender_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/join_pw_check_layout"
+        android:layout_toRightOf="@id/join_gender_tv"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/join_gender_male"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="남자"
+            android:checked="true" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="여자"
+            android:layout_marginLeft="50dp"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/join_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:layout_marginTop="30dp"
+        android:layout_alignRight="@id/join_gender_layout"
+        android:layout_below="@id/join_gender_layout"/>
+    <Button
+        android:id="@+id/join_quite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@id/join_gender_tv"
+        android:layout_below="@id/join_gender_layout"/>
+</RelativeLayout>

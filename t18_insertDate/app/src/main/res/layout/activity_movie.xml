@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/work_poster"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/work_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/work_poster"
+            android:textSize="30sp"
+            android:text="영화 제목(한글)"
+            />
+       <TextView
+            android:id="@+id/work_openDt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="10sp"
+            android:text="(2011)"
+           android:layout_toRightOf="@id/work_title"
+           android:layout_alignBottom="@id/work_title"
+            />
+
+
+        <TextView
+            android:id="@+id/work_title_eng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="영화 제목(영문)"
+            android:layout_below="@+id/work_title"
+            />
+        <TextView
+            android:id="@+id/work_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="장르"
+            android:layout_below="@+id/work_title_eng"
+            android:layout_alignParentEnd="true"
+            android:gravity="right"
+            android:layout_marginRight="30dp"
+            />
+           <TextView
+            android:id="@+id/work_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="관람 등급"
+            android:layout_below="@+id/work_genre"
+            android:layout_alignParentEnd="true"
+            android:gravity="right"
+            android:layout_marginRight="30dp"
+            />
+         <TextView
+            android:id="@+id/work_director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="감독: "
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/work_grade"
+            />
+        <TextView
+            android:id="@+id/work_director_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="감독_이름 + (영문명)"
+            android:layout_alignBottom="@id/work_director"
+            android:layout_toRightOf="@id/work_director"
+            />
+        <TextView
+            android:id="@+id/work_actor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="출연: "
+            android:layout_below="@+id/work_director"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/work_actor1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="출연_이름 + (영문명)"
+            android:layout_alignBottom="@id/work_actor1"
+            android:layout_toRightOf="@id/work_actor1"
+            />
+
+          <TextView
+            android:id="@+id/work_actor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="출연: "
+            android:layout_below="@+id/work_actor1"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/work_actor2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="출연_이름 + (영문명)"
+            android:layout_alignBottom="@id/work_actor2"
+            android:layout_toRightOf="@id/work_actor2"
+            />
+
+
+          <TextView
+            android:id="@+id/work_maker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="제작/배급사 : "
+            android:layout_below="@+id/work_actor2"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/work_maker_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_alignBottom="@id/work_maker"
+            android:layout_toRightOf="@id/work_maker"
+            />
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

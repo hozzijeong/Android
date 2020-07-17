@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="10dp"
+   >
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+       <RelativeLayout
+           android:id="@+id/comment_layout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/comment_author_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_launcher_background"
+
+                />
+          <TextView
+              android:id="@+id/comment_author"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:text="회원 아이디"
+              android:layout_toRightOf="@id/comment_author_iv"
+              android:layout_marginLeft="10dp"
+              android:gravity="center_vertical"
+              android:textStyle="bold"
+              />
+           <TextView
+               android:id="@+id/comment_content"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical"
+               android:paddingTop="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_toRightOf="@id/comment_author"
+               />
+       </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransferActivity">
+    <TextView
+        android:id="@+id/user_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_margin="40dp"
+        android:text="송금"
+        />
+    <TextView
+        android:id="@+id/num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계좌번호 입력:"
+        android:textSize="25sp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="40dp"
+        />
+    <EditText
+        android:id="@+id/transfer_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/num_tv"
+        android:layout_alignTop="@id/num_tv"
+        android:hint="계좌번호 입력"
+        android:layout_marginRight="40dp"
+        />
+    <TextView
+        android:id="@+id/money_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="금액 입력:"
+        android:textSize="25sp"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="40dp"
+        />
+    <EditText
+        android:id="@+id/transfer_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/money_tv"
+        android:layout_alignTop="@id/money_tv"
+        android:hint="금액 입력"
+        android:layout_alignStart="@id/transfer_num"
+        android:layout_marginRight="40dp"
+        />
+    <TextView
+        android:id="@+id/pw_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 입력:"
+        android:textSize="25sp"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="40dp"
+        />
+    <EditText
+        android:id="@+id/transfer_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/pw_tv"
+        android:layout_alignTop="@id/pw_tv"
+        android:hint="비밀번호 입력"
+        android:layout_marginRight="40dp"
+        />
+    <Button
+        android:id="@+id/transfer_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:textSize="25sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:layout_marginRight="40dp"
+        />
+    <Button
+        android:id="@+id/transfer_quite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="40dp"
+        />
+
+</RelativeLayout>

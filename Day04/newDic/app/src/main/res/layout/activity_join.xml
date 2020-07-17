@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinActivity">
+
+    <TextView
+        android:id="@+id/join_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 가입"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/join_id_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_below="@id/join_tv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        >
+        <TextView
+            android:id="@+id/join_id"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="아이디:"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/join_id_et"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/join_id"
+            android:layout_toRightOf="@id/join_id"
+            android:gravity="center_vertical"
+            />
+
+        <Button
+            android:id="@+id/join_id_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디\n중복 확인"
+            android:textSize="10sp"
+            android:background="#ffffff"
+            android:layout_toRightOf="@id/join_id_et"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/join_pw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/join_id_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <TextView
+            android:id="@+id/join_pw"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="비밀번호:"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/join_pw_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/join_pw"
+            android:layout_toRightOf="@id/join_pw"
+            android:gravity="center_vertical"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/join_pw_again_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/join_pw_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:id="@+id/join_pw_again"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="비밀번호 재입력:"
+            android:textSize="13sp"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/join_pw_again_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/join_pw_again"
+            android:layout_toRightOf="@id/join_pw_again"
+            android:gravity="center_vertical"
+            />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/join_Rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/join_pw_again_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/join_gender"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="성별"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            />
+        <RadioButton
+            android:id="@+id/join_male"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="남성"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/join_female"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="여성"
+            android:layout_marginLeft="50dp"
+            />
+
+    </RadioGroup>
+
+
+
+
+
+    <Button
+        android:id="@+id/join_joinbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/join_Rg"
+        android:layout_alignRight="@id/join_Rg"
+        android:layout_marginTop="30dp"
+        android:text="회원 가입"
+        />
+  <Button
+        android:id="@+id/join_quitebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/join_Rg"
+        android:layout_alignLeft="@id/join_Rg"
+        android:layout_marginTop="30dp"
+        android:text="뒤로 가기"
+        />
+
+</RelativeLayout>

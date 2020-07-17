@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFEB3B">
+
+    <TextView
+        android:id="@+id/fr3_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3번 프레그먼트"
+        android:textSize="30sp"/>
+   <Button
+       android:id="@+id/fr3_btn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="1번으로 이동"
+       android:layout_below="@id/fr3_tv"/>
+
+</RelativeLayout>

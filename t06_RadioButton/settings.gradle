@@ -1,0 +1,2 @@
+rootProject.name='t06_RadioButton'
+include ':app'

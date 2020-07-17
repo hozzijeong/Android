@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:text="영화 제목"
+        android:textSize="30sp"
+
+        />
+    <TextView
+        android:id="@+id/mv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="누적 관람객"
+        android:textSize="25sp"
+        android:layout_below="@id/mv_title"
+        android:layout_alignLeft="@id/mv_title"
+        android:layout_marginTop="10dp"
+       />
+    <TextView
+        android:id="@+id/mv_openDt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="개봉일"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/mv_amount"
+        android:layout_alignBottom="@id/mv_amount"
+        android:layout_marginRight="30dp"
+        android:gravity="right"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="개봉일"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/mv_amount"
+        android:layout_above="@id/mv_openDt"
+        android:layout_marginRight="30dp"
+        android:gravity="right"/>
+
+
+</RelativeLayout>

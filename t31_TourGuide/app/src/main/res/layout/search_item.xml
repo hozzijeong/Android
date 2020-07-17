@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <TextView
+       android:id="@+id/search_item_tv"
+       android:layout_width="wrap_content"
+       android:layout_height="50dp"
+       android:textSize="20dp"
+       android:gravity="left|center_vertical"
+       android:text="가나다라마바사"
+       android:layout_marginLeft="20dp"
+       />
+</RelativeLayout>

@@ -1,0 +1,2 @@
+rootProject.name='t25_FragmentViewer'
+include ':app'

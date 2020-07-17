@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/spot_quite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/top_back"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:id="@+id/spot_map"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/spot_quite"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:text="지도"
+
+        />
+    <TextView
+        android:id="@+id/spot_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_alignBottom="@id/spot_quite"
+        android:layout_centerHorizontal="true"
+        android:text="가게 이름"
+        />
+    <ImageView
+        android:id="@+id/spot_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/spot_quite"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/spot_explain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/spot_image"
+        android:layout_margin="30dp"
+        android:textSize="20sp"
+        android:text="가나다라마바사"
+        />
+</RelativeLayout>

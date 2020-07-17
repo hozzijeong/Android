@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinActivity">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="40sp"
+        android:layout_margin="40dp"
+        />
+    <TextView
+        android:id="@+id/id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID:"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/insert_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/id_tv"
+        android:layout_alignBottom="@id/id_tv"
+        android:layout_alignStart="@id/insert_pw"
+        android:hint="아이디 입력"
+        />
+    <TextView
+        android:id="@+id/pw_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PW:"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/insert_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/pw_tv"
+        android:layout_alignBottom="@id/pw_tv"
+        android:hint="비밀번호 입력"
+        />
+    <Button
+        android:id="@+id/join_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가입하기"
+        android:textSize="20sp"
+        android:layout_below="@id/insert_pw"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="60dp"
+        />
+    <Button
+        android:id="@+id/join_quite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:textSize="20sp"
+        android:layout_below="@id/insert_pw"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        />
+
+</RelativeLayout>

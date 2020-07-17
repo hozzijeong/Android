@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+<!--    shape로 모형을 선택할 수 있음 기본은 사각형-->
+
+<!--    사이즈(크기) 표현-->
+    <size android:width="200dp" android:height="120dp" />
+<!--    stroke -> 선의 굵기 와 색상-->
+    <stroke android:width="2dp" android:color="#000000"/>
+<!--  solid -> 안을 채워주는 색상-->
+    <solid android:color="#00000000"/>
+<!--    -->
+    <padding android:bottom="1dp"/>
+
+</shape>

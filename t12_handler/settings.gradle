@@ -1,0 +1,2 @@
+rootProject.name='t12_handler'
+include ':app'

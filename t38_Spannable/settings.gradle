@@ -1,0 +1,2 @@
+rootProject.name='t38_Spannable'
+include ':app'

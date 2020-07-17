@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/login_id_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="아이디: "
+        android:textSize="20sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_horizontal"
+        />
+    <EditText
+        android:id="@+id/login_id_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/login_id_tv"
+        android:layout_toRightOf="@id/login_id_tv"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/login_btn"
+        />
+
+    <TextView
+        android:id="@+id/login_pw_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="비밀번호: "
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/login_id_tv"
+        />
+    <EditText
+        android:id="@+id/login_pw_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/login_pw_tv"
+        android:layout_toRightOf="@id/login_pw_tv"
+        android:layout_toLeftOf="@id/login_btn"
+        android:layout_marginRight="20dp"
+        />
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@id/login_pw_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:text="Login"
+        />
+    <Button
+        android:id="@+id/login_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:text="회원가입"
+        android:layout_below="@id/login_pw_et"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="70dp"
+        />
+
+    <Button
+        android:id="@+id/login_quite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:text="종료"
+        android:layout_below="@id/login_pw_et"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="70dp"
+        />
+
+
+</RelativeLayout>

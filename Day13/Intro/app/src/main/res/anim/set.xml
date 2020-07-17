@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <scale
+        android:startOffset ="3000"
+        android:fromXScale="1"
+        android:toXScale="10"
+        android:fromYScale="1"
+        android:toYScale="10"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="3000"
+        />
+
+
+    <scale
+        android:fromXScale="1"
+        android:toXScale="0.1"
+        android:fromYScale="1"
+        android:toYScale="0.1"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="3000"
+        />
+
+    <translate
+        android:fromXDelta="0%p"
+        android:toXDelta="50%p"
+        android:duration = "3000"
+        />
+
+    <translate
+        android:startOffset ="3000"
+        android:fromXDelta="0%p"
+        android:toXDelta="-50%p"
+        android:duration = "3000"
+        />
+
+<!--    1의 의미는 당시 이미지의 절대적인 이미지 사이즈를 기준으로 한다.
+        따라서, scale의 사이즈가 0.1로 줄었다면, 아래 scale의 1의 사이즈는 기존 사이즈의 0.1배이다.-->
+
+
+</set>

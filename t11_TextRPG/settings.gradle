@@ -1,0 +1,2 @@
+rootProject.name='t11_TextRPG'
+include ':app'

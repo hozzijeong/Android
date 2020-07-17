@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RankActivity">
+    <TextView
+        android:id="@+id/rank_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="랭킹"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        />
+    <ListView
+        android:id="@+id/rank_Lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rank_tv"
+        android:layout_marginTop="30dp"
+        />
+    <Button
+        android:id="@+id/rank_quite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:textSize="15sp"
+        android:layout_alignBottom="@id/rank_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        />
+
+</RelativeLayout>

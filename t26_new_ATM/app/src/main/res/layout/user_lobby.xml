@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="50dp"
+    >
+
+    <Button
+        android:id="@+id/user_check_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="계좌 조회"
+        />
+
+    <Button
+        android:id="@+id/user_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="계좌 이체"
+        android:layout_below="@id/user_check_acc"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/user_leave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원 탈퇴"
+        android:layout_below="@id/user_transfer"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/user_quite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        android:layout_below="@id/user_leave"
+        android:layout_marginTop="30dp"
+        />
+
+
+</RelativeLayout>

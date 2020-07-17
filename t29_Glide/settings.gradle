@@ -1,0 +1,2 @@
+rootProject.name='t29_Glide'
+include ':app'

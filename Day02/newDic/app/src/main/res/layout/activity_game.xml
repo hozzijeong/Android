@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="asdfasdf"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        />
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="입력"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/answer"
+        />
+
+    <TextView
+        android:id="@+id/board"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:layout_alignParentEnd="true"
+        android:gravity="right"
+        android:text="info"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/board"
+        android:gravity="right"
+        android:text="0"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/switchbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="switch"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/answer"
+        android:layout_marginTop="50dp"
+        />
+
+</RelativeLayout>
